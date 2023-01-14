@@ -1,9 +1,10 @@
-import Card from '../../components/Card'
-import logements from '../../assets/logements.json'
-import Banner from '../../components/Banner'
-import { Link } from 'react-router-dom'
+import Card from '../../components/Card';
+import logements from '../../assets/logements.json';
+import Banner from '../../components/Banner';
+import { Link } from 'react-router-dom';
 
 function Home() {
+    document.title = 'Location entre particuliers - Kasa';
     return (
         <section>
             <Banner title="Chez vous, partout et ailleurs" page="home" />
@@ -19,7 +20,7 @@ function Home() {
                 ))}
             </ul>
         </section>
-    )
+    );
 }
 
-export default Home
+export default Home;

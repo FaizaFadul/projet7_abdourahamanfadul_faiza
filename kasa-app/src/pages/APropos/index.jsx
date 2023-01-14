@@ -1,8 +1,9 @@
-import Banner from '../../components/Banner'
-import Collapse from '../../components/Collapse'
-import apropos from '../../assets/apropos.json'
+import Banner from '../../components/Banner';
+import Collapse from '../../components/Collapse';
+import apropos from '../../assets/apropos.json';
 
 function APropos() {
+    document.title = 'À Propos - Kasa';
     return (
         <section>
             <Banner page="apropos" />
@@ -14,7 +15,7 @@ function APropos() {
                 ))}
             </ul>
         </section>
-    )
+    );
 }
 
-export default APropos
+export default APropos;

@@ -1,16 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
 // import Banner from './components/Banner'
-import APropos from './pages/APropos'
-import FicheLogement from './pages/FicheLogement'
-import NotFound from './pages/NotFound'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import './styles/css/style.css'
+import APropos from './pages/APropos';
+import FicheLogement from './pages/FicheLogement';
+import NotFound from './pages/NotFound';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import './styles/css/style.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <Router>
@@ -24,4 +24,4 @@ root.render(
             <Footer />
         </Router>
     </React.StrictMode>
-)
+);
