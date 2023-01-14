@@ -1,0 +1,22 @@
+@use '../base/typography';
+@use '../utils/variables' as *;
+
+.host {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    align-items: center;
+    h3 {
+        font-size: small;
+        font-weight: 500;
+        width: 60px;
+        text-align: right;
+        margin: 10px;
+        color: $brand-primary;
+    }
+    img {
+        height: 64px;
+        width: auto;
+        border-radius: 40px;
+    }
+}

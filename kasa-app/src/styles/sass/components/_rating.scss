@@ -1,0 +1,9 @@
+@use '../base/typography';
+@use '../utils/variables' as *;
+
+.rating {
+    img {
+        height: 20px;
+        margin-left: 10px;
+    }
+}

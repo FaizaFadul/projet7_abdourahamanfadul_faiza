@@ -1,0 +1,13 @@
+@use '../base/typography';
+@use '../utils/variables' as *;
+
+.collapse__list {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding-left: 0;
+    margin: auto;
+    &__container {
+        width: 100%;
+    }
+}

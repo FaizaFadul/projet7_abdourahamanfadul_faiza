@@ -1,0 +1,27 @@
+@use './base/typography';
+@use './utils/variables' as *;
+@use './components/header';
+@use './components/banner';
+@use './components/card';
+@use './components/collapse';
+@use './components/slideshow';
+@use './components/host';
+@use './components/rating';
+@use './components/tags';
+@use './components/footer';
+@use './pages/home';
+@use './pages/apropos';
+@use './pages/notfound';
+@use './pages/fichelogement';
+
+body {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $brand-secondary;
+}

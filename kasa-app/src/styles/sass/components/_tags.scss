@@ -1,0 +1,17 @@
+@use '../base/typography';
+@use '../utils/variables' as *;
+
+.tags {
+    border-radius: 10px;
+    border: none;
+    background: $brand-primary;
+    padding: 5px 25px 5px 25px;
+    color: $brand-secondary;
+    list-style-type: none;
+    margin-right: 10px;
+    &__list {
+        display: flex;
+        padding-left: 0px;
+        font-size: small;
+    }
+}

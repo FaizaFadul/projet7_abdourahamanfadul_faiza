@@ -1,0 +1,34 @@
+@use '../base/typography';
+@use '../utils/variables' as *;
+
+header {
+    box-sizing: border-box;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 100px 15px 100px;
+    font-size: large; //24px
+    color: $brand-primary;
+    img {
+        height: 50px;
+    }
+    nav {
+        display: flex;
+        width: 20%;
+        justify-content: space-between;
+        align-items: flex-end;
+        text-align: right;
+        a {
+            text-decoration: none;
+            padding-bottom: 15px;
+            color: $brand-primary;
+            &:hover {
+                text-decoration: underline;
+            }
+            &:visited {
+                text-decoration: none;
+            }
+        }
+    }
+}

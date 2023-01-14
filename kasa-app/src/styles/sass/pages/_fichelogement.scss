@@ -1,0 +1,59 @@
+@use '../base/typography';
+@use '../utils/variables' as *;
+
+.fichelogement {
+    margin: 40px 100px 15px 100px;
+    width: auto;
+    &__infos {
+        display: flex;
+        height: fit-content;
+        justify-content: space-between;
+    }
+    .titletags {
+        color: $brand-primary;
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
+        justify-content: space-around;
+        h1 {
+            font-size: x-large;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        h2 {
+            font-size: medium;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+    }
+    .hostrating {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: auto;
+    }
+    &__description {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        height: fit-content;
+        .collapse {
+            width: 47%;
+            &__button {
+                width: 100%;
+            }
+            &__description {
+                height: -webkit-fill-available;
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+        .equipment_list {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 0;
+        }
+    }
+}

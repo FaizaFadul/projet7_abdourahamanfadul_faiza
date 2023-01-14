@@ -1,0 +1,28 @@
+@use '../base/typography';
+@use '../utils/variables' as *;
+
+.banner {
+    box-sizing: border-box;
+    width: auto;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 100px 15px 100px;
+    color: $brand-secondary;
+    border-radius: 25px;
+    &--home {
+        background: linear-gradient(0deg, rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)),
+            url('../../assets/banner_home.png');
+        background-size: cover;
+    }
+    &--apropos {
+        background: linear-gradient(0deg, rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)),
+            url('../../assets/banner_apropos.png');
+        background-size: cover;
+    }
+    h1 {
+        font-size: xx-large; //48px
+        font-weight: 500;
+    }
+}
