@@ -5,15 +5,24 @@ footer {
     box-sizing: border-box;
     width: 100%;
     height: 200px;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     padding: 30px;
-    font-size: medium; //24px
+    font-size: large; //18px plutôt que 24px
     color: $brand-secondary;
     background-color: #000000;
+    padding-bottom: 15px;
+    @media (max-width: 767px) {
+        font-size: 12px;
+    }
     img {
         height: 39px;
+        margin-bottom: 20px;
+        @media (max-width: 767px) {
+            margin-bottom: 0;
+        }
     }
 }

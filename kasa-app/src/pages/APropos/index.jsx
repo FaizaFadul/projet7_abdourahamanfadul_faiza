@@ -5,7 +5,7 @@ import apropos from '../../assets/apropos.json';
 function APropos() {
     document.title = 'À Propos - Kasa';
     return (
-        <section>
+        <section className="apropos">
             <Banner page="apropos" />
             <ul className="collapse__list">
                 {apropos.map(({ id, title, description }) => (

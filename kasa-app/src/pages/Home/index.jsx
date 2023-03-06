@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Home() {
     document.title = 'Location entre particuliers - Kasa';
     return (
-        <section>
+        <section className="home">
             <Banner title="Chez vous, partout et ailleurs" page="home" />
             <ul className="card__list">
                 {logements.map(({ id, title, cover, location }) => (

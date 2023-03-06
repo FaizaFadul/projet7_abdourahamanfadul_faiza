@@ -11,6 +11,19 @@
     margin: 40px 100px 15px 100px;
     color: $brand-secondary;
     border-radius: 25px;
+    text-align: center;
+    @media (max-width: 992px) {
+        margin: 0;
+        width: 90%;
+        font-size: x-large;
+        height: 111px;
+        background-position: bottom;
+        border-radius: 10px;
+        @media (max-width: 767px) {
+            justify-content: flex-start;
+            text-align: left;
+        }
+    }
     &--home {
         background: linear-gradient(0deg, rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)),
             url('../../assets/banner_home.png');
@@ -20,9 +33,26 @@
         background: linear-gradient(0deg, rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)),
             url('../../assets/banner_apropos.png');
         background-size: cover;
+        @media (max-width: 992px) {
+            width: 100%;
+            margin-bottom: 20px;
+            height: 223px;
+            background: linear-gradient(
+                    0deg,
+                    rgb(0 0 0 / 30%),
+                    rgb(0 0 0 / 30%)
+                ),
+                url('../../assets/banner_apropos_mobile.png');
+            background-size: cover;
+        }
     }
     h1 {
-        font-size: xx-large; //48px
+        font-size: xxx-large; //48px
         font-weight: 500;
+        @media (max-width: 992px) {
+            font-size: x-large;
+            width: 65%;
+            margin: 20px;
+        }
     }
 }

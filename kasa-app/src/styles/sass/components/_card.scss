@@ -36,9 +36,10 @@
         position: absolute;
         z-index: 1;
         font-weight: 500;
-        font-size: small;
+        font-size: medium; //16px plutôt que 18px
         color: $brand-secondary;
+        line-height: 142.6%;
         padding-left: 20px;
-        width: 100px;
+        width: 50%;
     }
 }

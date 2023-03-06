@@ -8,7 +8,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 40px 100px 15px 100px;
-    font-size: large; //24px
+    font-size: large; //18px plutôt que 24px
     color: $brand-primary;
     img {
         height: 50px;
@@ -28,6 +28,21 @@ header {
             }
             &:visited {
                 text-decoration: none;
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        width: 90%;
+        margin: 20px 0 20px 0;
+        nav {
+            width: auto;
+            align-items: center;
+            text-transform: uppercase;
+            font-size: 12px;
+            a {
+                padding-bottom: 0px;
+                margin-left: 15px;
             }
         }
     }

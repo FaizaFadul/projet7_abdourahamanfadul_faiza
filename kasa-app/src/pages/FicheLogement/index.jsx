@@ -13,7 +13,7 @@ function FicheLogement() {
 
     useEffect(() => {
         if (!logements.find((obj) => obj.id === id)) {
-            navigate('*');
+            navigate('notfound');
         }
     });
 

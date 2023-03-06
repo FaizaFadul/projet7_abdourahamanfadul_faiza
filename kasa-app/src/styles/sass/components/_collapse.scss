@@ -11,6 +11,7 @@
         z-index: 1;
         background-color: $brand-primary;
         color: $brand-secondary;
+        font-family: 'Montserrat';
         border-radius: 5px;
         border: none;
         margin-bottom: 0;
@@ -22,8 +23,11 @@
         align-items: center;
         cursor: pointer;
         h2 {
-            font-size: medium;
+            font-size: large; //18px plutôt que 24px
             font-weight: 500;
+            @media (max-width: 992px) {
+                font-size: 13px;
+            }
         }
         img {
             height: 10px;
@@ -33,12 +37,16 @@
         z-index: 0;
         background-color: $component-background;
         color: $brand-primary;
-        font-size: smaller;
-        font-weight: 500;
+        font-size: large; //18px plutôt que 24px
+        line-height: 142.6%;
+        font-weight: 400;
         margin-top: -5px;
         padding: 20px 10px 10px 10px;
         width: auto;
         border-radius: 5px;
         border: none;
+        @media (max-width: 992px) {
+            font-size: 12px;
+        }
     }
 }

@@ -6,17 +6,28 @@
     justify-content: flex-end;
     margin-top: 15px;
     align-items: center;
+    @media (max-width: 992px) {
+        margin: 0;
+    }
     h3 {
-        font-size: small;
+        display: flex;
+        justify-content: flex-end;
+        font-size: medium; //16px plutôt que 18px
         font-weight: 500;
         width: 60px;
         text-align: right;
         margin: 10px;
         color: $brand-primary;
+        @media (max-width: 992px) {
+            font-size: 12px;
+        }
     }
     img {
         height: 64px;
         width: auto;
         border-radius: 40px;
+        @media (max-width: 992px) {
+            height: 32px;
+        }
     }
 }

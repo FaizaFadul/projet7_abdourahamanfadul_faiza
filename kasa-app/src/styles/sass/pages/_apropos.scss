@@ -1,13 +1,23 @@
 @use '../base/typography';
 @use '../utils/variables' as *;
 
-.collapse__list {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    padding-left: 0;
-    margin: auto;
-    &__container {
-        width: 100%;
+.apropos {
+    flex: 1 0 auto;
+    @media (max-width: 992px) {
+        width: 90%;
+    }
+    .collapse__list {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        padding-left: 0;
+        margin: auto;
+        @media (max-width: 992px) {
+            margin: 0;
+            width: 100%;
+        }
+        &__container {
+            width: 100%;
+        }
     }
 }

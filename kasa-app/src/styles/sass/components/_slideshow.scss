@@ -23,6 +23,9 @@
         object-fit: cover;
         top: 45%;
         cursor: pointer;
+        @media (max-width: 992px) {
+            height: 20px;
+        }
         img {
             height: inherit;
         }
@@ -37,7 +40,18 @@
     .counter {
         position: absolute;
         left: 50%;
+        margin-left: -10px;
         bottom: 5%;
         color: $brand-secondary;
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    @media (max-width: 992px) {
+        height: 300px;
+        @media (max-width: 767px) {
+            height: 255px;
+        }
     }
 }
