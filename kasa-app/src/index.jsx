@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-// import Banner from './components/Banner'
 import APropos from './pages/APropos';
 import FicheLogement from './pages/FicheLogement';
 import NotFound from './pages/NotFound';
